@@ -8,7 +8,8 @@ html, body {
     justify-content: center;
     align-items: center;
     background-color: skyblue;
-    background-image: linear-gradient(rgb(0, 0, 185), skyblue);
+    background-image: url(sky.jpg);
+    background-size: cover;
 }
 
 main {
