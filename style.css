@@ -4,21 +4,54 @@ html, body {
     box-sizing: border-box;
     height: 100vh;
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     background-color: skyblue;
     background-image: url(sky.jpg);
     background-size: cover;
+    overflow-y: hidden;
+    overflow-x: scroll;
 }
 
 main {
     max-width: 500px;
-    max-height: 500px;
-    margin: auto;
+    box-sizing: border-box;
+    margin: 20px auto;
     padding: 10px;
-    border-radius: 10px;
-    background-color: white;
-    border: 1px solid black;
+    background-color: rgba(240, 255, 255, 0.734);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(112, 128, 144, 0.64);
+    font-size: 18px;
+    font-family: sourcesans, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+ul {
+    margin: 5px 0px;
+}
+
+h2 {
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0px;
+}
+#email {
+    display: block;
+    text-align: center;
+}
+
+@font-face {
+    font-family: sourcesans;
+    src: url(Source_Sans_Pro/SourceSansPro-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: sourcesans;
+    src: url(Source_Sans_Pro/SourceSansPro-Bold.ttf);
+    font-weight: bold;
+}
+
+iframe {
+    border-radius: 10px;
+    border: 1px solid black !important;
+    box-sizing: border-box;
 }
